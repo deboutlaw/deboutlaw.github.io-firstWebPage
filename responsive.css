@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-inner {
+  width:100%;
+  position:relative;
+  text-align: center;
+}
+
+.intro-title {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}
+
+.intro-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+
+}
+
+.challenge{
+  flex:1
+}
+
+.current {
+    flex:1
+}
+
+.next-up{
+    flex:1
+}
+
+@media screen and (min-width: 398px) {
+  .challenge,
+  .current,
+  .next-up {
+    width:40%;
+  }
+}
+
+@media screen and (min-width: 595px) {
+  .challenge,
+  .current,
+  .next-up {
+    width:45%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  main,
+  .header__inner,
+  .container {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
